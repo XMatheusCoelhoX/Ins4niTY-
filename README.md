@@ -1,52 +1,71 @@
-1. README.md (Versão Ins4niTY)
-Markdown
-# Ins4niTY.py — Aggressive Secret Scanner 💀🔥
+Ins4niTY.py — Advanced Offensive Validation & Attack Chaining 💀⚡
+O Ins4niTY.py é uma plataforma de validação ofensiva de última geração, projetada para transpor a barreira entre a vulnerabilidade teórica e a Prova de Valor (PoC) irrefutável. Combinando a precisão de um motor híbrido com a agressividade de táticas APT (Advanced Persistent Threat), o sistema automatiza o ciclo completo de exploração em ambientes de alta complexidade e arquiteturas Cloud-native.
 
-[![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/)
-[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE.md)
-[![Status](https://img.shields.io/badge/status-Insane-red)](#)
+✨ Diferenciais Estratégicos e Técnicos
+Motor de Mutação Reativa & Evasão: Payload tuning em tempo real para bypass de WAFs e IDSs, garantindo furtividade durante o Elite Fuzzing.
 
-O **Ins4niTY.py** é um scanner de segredos de ultra-performance, desenhado para ser a ferramenta definitiva em operações de Red Team e Bug Bounty. O seu objetivo é simples: encontrar o que deveria estar escondido, com uma velocidade e agressividade sem precedentes.
+Exploração Ativa e Chaining: Automação de cadeias de ataque complexas, incluindo SSRF em nuvem, RCE via OOB (Out-of-Band), Race Conditions e Prototype Pollution.
 
-## ⚡ Porquê Ins4niTY?
+Auditoria Inteligente e Looting: Sistema integrado de exfiltração que identifica e valida credenciais (AWS, GitHub, DBs) em tempo real, realizando o privilege checking imediato.
 
-- **Agressividade Pura**: Motor multi-threaded capaz de lidar com volumes massivos de dados sem perda de precisão.
-- **Ecossistema de Recon**: Automatiza o uso de `subfinder`, `gau` e `Wayback Machine` para garantir que nenhum endpoint fique de fora.
-- **Inteligência de Deteção**:
-    - **YARA Core**: Regras avançadas para identificar chaves de cloud (AWS, Azure, GCP), tokens de comunicação (Slack, Telegram) e muito mais.
-    - **Shannon Entropy**: Identifica segredos baseados na aleatoriedade dos dados, capturando chaves que não seguem padrões fixos.
-    - **Base64 Deep Scan**: Decodificação inteligente para encontrar payloads escondidos.
-- **Watchdog Anti-Kill**: Sistema de monitorização em tempo real que garante a continuidade da execução mesmo em ambientes instáveis.
-- **Pronto para SOC/SIEM**: Integração nativa para exportar achados via API (FastAPI) e sistemas de alerta externos.
+Inteligência Acionável: Centralização de evidências em dashboards técnicos, com monitoramento de interações externas e notificações via webhooks.
 
-## 🛠️ Instalação
+🛠️ Espectro Total de Auditoria (Módulos de Teste)
+1. OPSEC, Evasão e Furtividade
+Proxy Rotation: Pool rotativo para evitar bloqueios de IP.
 
-1. Clone o repositório:
-```bash
-> git clone [https://github.com/seu-usuario/Ins4niTY.git](https://github.com/seu-usuario/Ins4niTY.git)
-> cd Ins4niTY
+Identity Spoofing: Headers realistas e User-Agents de navegadores modernos/bots legítimos.
 
+Adaptive Payload Mutation: Bypass automático de erro 403 via Double Encoding, Unicode Obfuscation e Case Randomization.
+
+WAF Fingerprinting: Identificação de assinaturas (Cloudflare, Akamai, Imperva, F5).
+
+2. Exploração de Injeções e Execução (RCE)
+SSTI (Server-Side Template Injection): Validação em engines como Jinja2 e Twig.
+
+Blind RCE: Testes de execução cegos disparando comandos de callback via HTTP e DNS.
+
+SQL Injection (Time-based): Confirmação via análise de latência de resposta.
+
+Race Condition: Requisições assíncronas simultâneas para falhas de lógica e concorrência.
+
+3. Infraestrutura e Cloud (AWS Focus)
+SSRF Advanced: Bypass de IMDSv1 e IMDSv2 em instâncias EC2 (payloads Hex/Decimal).
+
+Key Exterminator: Validação automática de chaves AWS, GitHub e Google Maps com verificação de privilégios "God-Mode".
+
+S3 Bucket Scanner: Auditoria de exposição e listagem pública de arquivos em buckets.
+
+4. Vazamento de Dados e Fuzzing de Elite
+Elite Path Fuzzing: Foco nos caminhos estatisticamente mais críticos (ex: /.env, /.git/config).
+
+JS Deep Scanner: Varredura de arquivos JavaScript em busca de segredos e endpoints ocultos.
+
+Dependency Confusion: Análise de package.json contra sequestro de cadeia de suprimentos.
+
+IDOR/BOLA: Validação de falhas de controle de acesso e manipulação de identificadores.
+
+🚀 Instalação e Uso
+Clone o repositório:
+
+Bash
+git clone https://github.com/XMatheusCoelhoX/Ins4niTY-.git
+cd Ins4niTY-
 Instale as dependências:
 
-> pip install requests yara-python
+Bash
+pip install requests yara-python
+Execução:
 
-💻 Utilização
+Bash
+python3 Ins4niTY.py -d alvo.com.br
+📊 Core de Auditoria e Reporting
+Dashboard HTML Dinâmico: Relatórios interativos com categorização de severidade (Critical/High).
 
-Para um varrimento agressivo completo:
+Painel de Comando Real-time: Interface via terminal com métricas de velocidade e subfases do scan.
 
-> python3 Ins4niTY.py -d alvo.com.br
+Data Persistence: Logs sincronizados em JSON para preservação total de evidências.
 
-Comandos Principais:
+Why Ins4niTY? Projetado para operações onde a velocidade e a precisão da prova de conceito são mandatórias. Ele não apenas reporta falhas; ele demonstra o impacto real na integridade do negócio.
 
--d, --domain: Define o domínio alvo para a fase de Recon.
-
--i, --input: Carrega uma lista personalizada de URLs.
-
--o, --output: Define o ficheiro de saída para os relatórios.
-
-🛡️ Disclaimer
-
-Esta ferramenta foi criada para profissionais de cibersegurança. O uso do Ins4niTY.py para atividades ilícitas é estritamente proibido. O autor não se responsabiliza por quaisquer danos ou uso indevido.
-
-Desenvolvido por Matheus Coelho
-# Ins4niTY-
+Desenvolvido por Matheus Coelho Disclaimer: Este software é para fins educacionais e auditorias autorizadas. O uso indevido é de total responsabilidade do operador.
