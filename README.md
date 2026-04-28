@@ -1,4 +1,4 @@
-Ins4niTY.py — Advanced Offensive Validation & Attack Chaining 💀⚡
+💀⚡ Ins4niTY.py — Advanced Offensive Validation & Attack Chaining
 O Ins4niTY.py é uma plataforma de validação ofensiva de última geração, projetada para transpor a barreira entre a vulnerabilidade teórica e a Prova de Valor (PoC) irrefutável. Combinando a precisão de um motor híbrido com a agressividade de táticas APT (Advanced Persistent Threat), o sistema automatiza o ciclo completo de exploração em ambientes de alta complexidade e arquiteturas Cloud-native.
 
 ✨ Diferenciais Estratégicos e Técnicos
@@ -45,20 +45,22 @@ Dependency Confusion: Análise de package.json contra sequestro de cadeia de sup
 
 IDOR/BOLA: Validação de falhas de controle de acesso e manipulação de identificadores.
 
+
+
 🚀 Instalação e Uso
 Clone o repositório:
 
-Bash
-git clone https://github.com/XMatheusCoelhoX/Ins4niTY-.git
-cd Ins4niTY-
+> git clone https://github.com/XMatheusCoelhoX/Ins4niTY-.git
+> cd Ins4niTY-
+
 Instale as dependências:
 
-Bash
-pip install requests yara-python
+> pip install requests yara-python
+
 Execução:
 
-Bash
-python3 Ins4niTY.py -d alvo.com.br
+> python3 Ins4niTY.py -d alvo.com.br
+
 📊 Core de Auditoria e Reporting
 Dashboard HTML Dinâmico: Relatórios interativos com categorização de severidade (Critical/High).
 
@@ -67,5 +69,7 @@ Painel de Comando Real-time: Interface via terminal com métricas de velocidade 
 Data Persistence: Logs sincronizados em JSON para preservação total de evidências.
 
 Why Ins4niTY? Projetado para operações onde a velocidade e a precisão da prova de conceito são mandatórias. Ele não apenas reporta falhas; ele demonstra o impacto real na integridade do negócio.
+
+
 
 Desenvolvido por Matheus Coelho Disclaimer: Este software é para fins educacionais e auditorias autorizadas. O uso indevido é de total responsabilidade do operador.
